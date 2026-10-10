@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Home</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 8px;
+            text-align: left;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 18px;
+            margin: 4px 0 8px 0;
+            text-align: center;
+        }
+        p {
+            margin: 6px 0;
+            line-height: 1.3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 4px;
+            font-size: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #1f1f1f;
+            color: #4CAF50;
+        }
+        ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #64B5F6;
+            text-decoration: none;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 6px;
+            margin-bottom: 6px;
+            border-left: 3px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ESP32 CYD Server</h1>
+
+    <div class="card">
+        <p style="text-align: center; color: #ffeb3b; font-weight: bold;">Статус: Онлайн 🟢</p>
+        <p>Платформа: ESP32-2432S028</p>
+    </div>
+
+    <div class="card">
+        <p style="color: #4CAF50; font-weight: bold;">Системні датчики:</p>
+        <ul>
+        <li>Пам'ять: <b>180 KB RAM</b></li>
+        <li>Частота: <b>240 MHz</b></li>
+        <li>Wi-Fi: <span style="color: #64B5F6;">Підключено</span></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <p style="color: #4CAF50; font-weight: bold;">Таблиця пінів:</p>
+        <table>
+            <tr>
+                <th>Пін</th>
+                <th>Функція</th>
+                <th>Стан</th>
+            </tr>
+            <tr>
+                <td>IO 21</td>
+                <td>I2C SDA</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td>IO 22</td>
+                <td>I2C SCL</td>
+                <td>High</td>
+            </tr>
+            <tr>
+                <td>IO 4</td>
+                <td>TFT Backlight</td>
+                <td>PWM</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <p><a href="/">Оновити сторінку</a></p>
+    </div>
+
+</body>
+</html>
