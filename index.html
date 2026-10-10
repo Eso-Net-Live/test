@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>ESP32 Status</title>
-</head>
-<body style="background-color: #121212; color: #ffffff; font-family: sans-serif; font-size: 14px; margin: 8px;">
+<body style="background: #111; color: #fff; font-family: monospace; font-size: 14px; padding: 10px;">
 
-    <h1 style="color: #4CAF50; font-size: 18px; text-align: center; margin: 4px;">ESP32 CYD</h1>
+    <h2 style="color: #0f0; text-align: center;">ESP32 CYD</h2>
 
-    <div style="background-color: #1e1e1e; padding: 8px; margin-bottom: 8px;">
-        <p style="margin: 0;"><b>Status:</b> <span style="color: #4CAF50;">Online</span></p>
-        <p style="margin: 4px 0 0 0;"><b>Board:</b> ESP32-2432S028</p>
-    </div>
+    <p>Status: <span style="color: #0f0;">Online</span></p>
+    <p>WiFi: Connected</p>
 
-    <div style="background-color: #1e1e1e; padding: 8px; margin-bottom: 8px;">
-        <p style="margin: 0 0 4px 0;"><b>System Info:</b></p>
-        <ul style="margin: 0; padding-left: 20px;">
-            <li>CPU: 240 MHz</li>
-            <li>Display: 320x240</li>
-            <li>Wi-Fi: Connected</li>
-        </ul>
-    </div>
+    <p>Pins:</p>
+    <table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+        <tr>
+            <th>Pin</th>
+            <th>State</th>
+        </tr>
+        <tr>
+            <td>IO21</td>
+            <td>HIGH</td>
+        </tr>
+        <tr>
+            <td>IO22</td>
+            <td>LOW</td>
+        </tr>
+    </table>
 
-    <div style="background-color: #1e1e1e; padding: 8px; margin-bottom: 8px;">
-        <p style="margin: 0 0 4px 0;"><b>Pin States:</b></p>
-        <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; font-size: 12px; border-color: #444;">
-            <tr style="background-color: #2a2a2a; color: #4CAF50;">
-                <th>Pin</th>
-                <th>Function</th>
-                <th>State</th>
-            </tr>
-            <tr>
-                <td>IO21</td>
-                <td>SDA</td>
-                <td>HIGH</td>
-            </tr>
-            <tr>
-                <td>IO22</td>
-                <td>SCL</td>
-                <td>HIGH</td>
-            </tr>
-        </table>
-    </div>
-
-    <p style="text-align: center; margin-top: 10px;">
-        <a href="/" style="color: #64B5F6; text-decoration: none;">[ Refresh Page ]</a>
+    <p style="text-align: center;">
+        <a href="/" style="color: #0ff;">[Refresh]</a>
     </p>
 
 </body>
